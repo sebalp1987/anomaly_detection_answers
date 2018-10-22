@@ -1,0 +1,49 @@
+{
+  "GENERAL": {
+    "NAME": "rms_titanic",
+    "DESCRIPTION": "Model to predict which passengers survived the titanic tragedy; survival 0=no, 1=yes ",
+    "STATUS": true,
+    "ONLINE": true,
+    "BATCH": false
+  },
+"ONLINE": {
+    "INPUT_SCHEMA": {
+      "type": "object",
+      "properties": {
+        "Age": {
+          "type": "integer"
+        },
+        "Sex": {
+          "type": "string"
+        },
+        "Embarked": {
+          "type": "string"
+        }
+      }
+    },
+    "OUTPUT_SCHEMA": {
+      "type": "object",
+      "properties": {
+        "Result": {
+          "type": "integer"
+        }
+      }
+    },
+    "INPUT_EXAMPLE": {
+      "Age": 3,
+      "Sex": "male",
+      "Embarked": "C"
+    },
+    "OUTPUT_EXAMPLE": {
+      "Result": 1
+    }
+  },
+"BATCH": {
+    "INPUT_SCHEMA": "",
+    "OUTPUT_SCHEMA": "",
+    "INPUT_PATH": "",
+    "OUTPUT_PATH": "",
+    "SCHEDULE_PLAN": ""
+  }
+}
+
